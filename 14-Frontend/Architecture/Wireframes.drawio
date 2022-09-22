@@ -1,0 +1,65 @@
+<mxfile host="65bd71144e">
+    <diagram id="SuwjjlNXHNlHKlohlTei" name="Page-1">
+        <mxGraphModel dx="2834" dy="1898" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="23" value="" style="edgeStyle=none;html=1;entryX=-0.001;entryY=0.335;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="2" target="19">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.browserWindow;rSize=0;strokeColor=#666666;strokeColor2=#008cff;strokeColor3=#c4c4c4;mainText=,;recursiveResize=0;" vertex="1" parent="1">
+                    <mxGeometry x="280" y="20" width="850" height="700" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Home" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.anchor;fontSize=17;fontColor=#666666;align=left;" vertex="1" parent="2">
+                    <mxGeometry x="60" y="12" width="110" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="https://www.mydapp.mydomain" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.anchor;rSize=0;fontSize=17;fontColor=#666666;align=left;" vertex="1" parent="2">
+                    <mxGeometry x="130" y="60" width="250" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Create wallet" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#008cff;whiteSpace=wrap;" vertex="1" parent="2">
+                    <mxGeometry x="350" y="620" width="150" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="&lt;font style=&quot;font-size: 40px&quot;&gt;Hello, world!&lt;/font&gt;&lt;br&gt;&lt;br&gt;This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information." style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeColor=none;html=1;whiteSpace=wrap;fillColor=#E9ECEF;fontColor=#474E4F;align=left;spacing=15;fontSize=14;verticalAlign=top;spacingTop=40;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="190" width="800" height="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="It uses utility classes for typography and spacing to space content out within the larger container." style="shape=line;html=1;shadow=0;dashed=0;strokeColor=#CED4DA;gradientColor=inherit;fontColor=inherit;fillColor=#E9ECEF;rSize=5;perimeter=none;whiteSpace=wrap;resizeHeight=1;fontSize=14;align=left;spacing=2;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;spacingTop=10;" vertex="1" parent="6">
+                    <mxGeometry width="770" height="10" relative="1" as="geometry">
+                        <mxPoint x="15" y="150" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="8" value="Learn more" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;fillColor=#0085FC;strokeColor=none;align=center;spacing=15;fontSize=14;fontColor=#ffffff;" vertex="1" parent="6">
+                    <mxGeometry y="1" width="100" height="40" relative="1" as="geometry">
+                        <mxPoint x="15" y="-80" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="19" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.browserWindow;rSize=0;strokeColor=#666666;strokeColor2=#008cff;strokeColor3=#c4c4c4;mainText=,;recursiveResize=0;" vertex="1" parent="1">
+                    <mxGeometry x="1210" y="20" width="850" height="1060" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="Dashboard" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.anchor;fontSize=17;fontColor=#666666;align=left;" vertex="1" parent="19">
+                    <mxGeometry x="60" y="12" width="110" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="https://www.mydapp.mydomain/dashboard" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.anchor;rSize=0;fontSize=17;fontColor=#666666;align=left;" vertex="1" parent="19">
+                    <mxGeometry x="130" y="60" width="250" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="&lt;span style=&quot;font-size: 20px&quot;&gt;&lt;b&gt;Address&lt;/b&gt;&lt;/span&gt;&lt;br style=&quot;font-size: 14px&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;br&gt;&lt;b&gt;&lt;font style=&quot;font-size: 20px&quot;&gt;Ether balance&lt;/font&gt;&lt;/b&gt;&lt;br&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;br&gt;&lt;span style=&quot;font-size: 20px&quot;&gt;&lt;b&gt;Netowirk name&lt;/b&gt;&lt;/span&gt;&lt;br&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;br&gt;&lt;span style=&quot;font-size: 20px&quot;&gt;&lt;b&gt;Last block&lt;/b&gt;&lt;/span&gt;&lt;br&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;br&gt;&lt;span style=&quot;font-size: 20px&quot;&gt;&lt;b&gt;Contract address&lt;/b&gt;&lt;/span&gt;&lt;br&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;br&gt;&lt;span style=&quot;font-size: 20px&quot;&gt;&lt;b&gt;Name an Symbol&lt;br&gt;&lt;/b&gt;&lt;/span&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;br&gt;&lt;span style=&quot;font-size: 20px&quot;&gt;&lt;b&gt;Total supply&lt;br&gt;&lt;/b&gt;&lt;/span&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;br&gt;&lt;span style=&quot;font-size: 20px&quot;&gt;&lt;b&gt;Address of user wallet&lt;/b&gt;&lt;/span&gt;&lt;br&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;br&gt;&lt;b style=&quot;font-size: 20px&quot;&gt;Token Balance of user wallet&lt;/b&gt;&lt;br&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeColor=#D2D3D4;html=1;whiteSpace=wrap;fillColor=#F8F9FA;fontColor=#212529;verticalAlign=bottom;align=left;spacing=20;spacingBottom=0;fontSize=14;" vertex="1" parent="19">
+                    <mxGeometry x="20" y="130" width="810" height="890" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="Data" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.topButton;rSize=5;perimeter=none;whiteSpace=wrap;fillColor=#F0F1F2;strokeColor=#D2D3D4;fontColor=#212529;resizeWidth=1;fontSize=18;align=left;spacing=20;" vertex="1" parent="28">
+                    <mxGeometry width="810" height="50" relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeColor=#CED4DA;html=1;whiteSpace=wrap;fillColor=#FFFFFF;fontColor=#7D868C;align=left;spacing=15;spacingLeft=40;fontSize=14;" vertex="1" parent="28">
+                    <mxGeometry x="110" y="755" width="320" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="Tokens" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.leftButton;strokeColor=#6C757D;gradientColor=inherit;fontColor=inherit;fillColor=inherit;rSize=5;perimeter=none;whiteSpace=wrap;resizeHeight=1;fontSize=14;" vertex="1" parent="36">
+                    <mxGeometry width="70" height="40" relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="Request tokens" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;strokeColor=#666666;fontColor=#ffffff;mainText=;buttonStyle=round;fontSize=17;fontStyle=1;fillColor=#008cff;whiteSpace=wrap;" vertex="1" parent="28">
+                    <mxGeometry x="490" y="750" width="150" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px&quot;&gt;Request tokens&lt;/font&gt;&lt;/b&gt;&lt;br style=&quot;font-size: 14px&quot;&gt;&lt;br style=&quot;font-size: 14px&quot;&gt;Request some tokens here using the form bellow" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeColor=#0071D5;html=1;whiteSpace=wrap;fillColor=#0085FC;fontColor=#ffffff;verticalAlign=bottom;align=left;spacing=20;spacingBottom=0;fontSize=14;" vertex="1" parent="28">
+                    <mxGeometry x="110" y="610" width="530" height="110" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

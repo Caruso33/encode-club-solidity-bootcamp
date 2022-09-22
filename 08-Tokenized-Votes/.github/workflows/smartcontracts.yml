@@ -1,0 +1,27 @@
+# place at path: .github/workflows/smartcontracts.yml
+name: smartcontracts
+on: [push]
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+      - name: Install Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: "yarn"
+          cache-dependency-path: ./Project/yarn.lock
+      - name: Install Dependencies
+        working-directory: ./Project
+        run: yarn install
+      - name: Generate TS Types for Smartcontracts
+        working-directory: ./Project
+        run: yarn hardhat typechain
+      - name: Run Hardhat Tests
+        working-directory: ./Project
+        run: yarn hardhat test
+      - name: Run solidity linter
+        working-directory: ./Project
+        run: yarn solhint 'contracts/**/*.sol'

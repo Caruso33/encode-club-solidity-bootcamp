@@ -1,0 +1,47 @@
+strict digraph {
+subgraph cluster_1477_Faker {
+label = "Faker"
+"1477_getCurrentPhase" [label="getCurrentPhase"]
+"1477_constructor" [label="constructor"]
+"1477_getCurrentPeriod" [label="getCurrentPeriod"]
+"1477_isShift" [label="isShift"]
+"1477_hasWithdrawnEarnings" [label="hasWithdrawnEarnings"]
+"1477_withdrawEarnings" [label="withdrawEarnings"]
+"1477_slitherConstructorConstantVariables" [label="slitherConstructorConstantVariables"]
+"1477_voteBySlate" [label="voteBySlate"]
+"1477_voteByAddresses" [label="voteByAddresses"]
+"1477_submitBid" [label="submitBid"]
+"1477_withdrawPhaseEarnings" [label="withdrawPhaseEarnings"]
+"1477_isAuction" [label="isAuction"]
+"1477_deposit" [label="deposit"]
+"1477_recordEarningsWithdrawal" [label="recordEarningsWithdrawal"]
+"1477_withdrawMaker" [label="withdrawMaker"]
+"1477_withdrawPhaseEarnings" -> "1477_recordEarningsWithdrawal"
+"1477_withdrawPhaseEarnings" -> "1477_isAuction"
+"1477_withdrawMaker" -> "1477_onlyShift"
+"1477_submitBid" -> "1477_onlyAuction"
+"1477_submitBid" -> "1477_getCurrentPhase"
+"1477_voteByAddresses" -> "1477_getCurrentPhase"
+"1477_deposit" -> "1477_getCurrentPhase"
+"1477_deposit" -> "1477_onlyShift"
+"1477_getCurrentPhase" -> "1477_getCurrentPeriod"
+"1477_withdrawPhaseEarnings" -> "1477_hasWithdrawnEarnings"
+"1477_isAuction" -> "1477_getCurrentPeriod"
+"1477_withdrawPhaseEarnings" -> "1477_isShift"
+"1477_voteBySlate" -> "1477_onlyWinner"
+"1477_voteByAddresses" -> "1477_onlyWinner"
+"1477_withdrawPhaseEarnings" -> "1477_getCurrentPhase"
+"1477_voteBySlate" -> "1477_getCurrentPhase"
+"1477_withdrawEarnings" -> "1477_withdrawPhaseEarnings"
+"1477_withdrawMaker" -> "1477_getCurrentPhase"
+"1477_isShift" -> "1477_getCurrentPeriod"
+}subgraph cluster_solidity {
+label = "[Solidity]"
+"require(bool,string)" 
+"1477_withdrawPhaseEarnings" -> "require(bool,string)"
+"1477_constructor" -> "require(bool,string)"
+"1477_submitBid" -> "require(bool,string)"
+"1477_withdrawMaker" -> "require(bool,string)"
+"1477_deposit" -> "require(bool,string)"
+}
+}

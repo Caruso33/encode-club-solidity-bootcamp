@@ -1,0 +1,10 @@
+strict digraph {
+subgraph cluster_1568_Migrations {
+label = "Migrations"
+"1568_setCompleted" [label="setCompleted"]
+"1568_constructor" [label="constructor"]
+"1568_setCompleted" -> "1568_restricted"
+}subgraph cluster_solidity {
+label = "[Solidity]"
+}
+}

@@ -1,0 +1,64 @@
+<div class="px-4 py-5 my-5 text-center">
+  <div class="card">
+    <div class="card-header">
+      <p>Data</p>
+    </div>
+    <div class="card-body">
+      <div class="list-group" *ngFor="let item of pageContents">
+        <div class="list-group-item py-3" aria-current="true">
+          <div>
+            <h6 class="mb-0 text-start"><strong>{{item.prop}}</strong></h6>
+            <p class="mb-0 text-start">{{item.value}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="card bg-primary mt-4 col-md-8 text-white text-start">
+          <div class="card-body">
+            <p><strong>Request tokens</strong></p>
+            <p>Request some tokens here using the form bellow</p>
+          </div>
+        </div>
+        <form>
+          <div class="d-flex justify-content-evenly mt-4 mx-4 px-4">
+            <div class="mb-3 col-md-5">
+              <label for="amount" class="form-label">Amount of tokens</label>
+              <input #amount type="number" class="form-control text-center" id="amount" aria-describedby="amount">
+              <div id="amount" class="form-text">Amount of tokens to claim</div>
+            </div>
+            <div class="mb-3 mt-4 col-md-3">
+              <button type='button' class="button btn-lg btn-primary w-100"
+                (click)="requestToken(amount.value)">Request</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="text-end">
+        <p><small class="text-muted">
+            The server is synchronized to the block number {{serverBlock}}
+          </small></p>
+      </div>
+      <div *ngIf="pendingTx.length > 0" class="m-4 p-4 border">
+        <h2 class="mt-2 mb-4">Pending requests</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Amount</th>
+              <th scope="col">Hash</th>
+              <th scope="col">Confirmations</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let tx of pendingTx; index as i">
+              <th scope="row">{{i + 1}}</th>
+              <td>{{tx.amount}}</td>
+              <td>{{tx.hash}}</td>
+              <td>{{tx.updateOngoing ? "..." : tx.confirmations < 5 ? tx.confirmations : "5+" }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

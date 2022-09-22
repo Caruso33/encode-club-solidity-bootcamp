@@ -1,0 +1,15 @@
+strict digraph {
+subgraph cluster_1531_IChief {
+label = "IChief"
+"1531_IOU" [label="IOU"]
+"1531_GOV" [label="GOV"]
+"1531_free" [label="free"]
+"1531_vote" [label="vote"]
+"1531_lock" [label="lock"]
+"1531_lift" [label="lift"]
+"1531_approvals" [label="approvals"]
+"1531_etch" [label="etch"]
+}subgraph cluster_solidity {
+label = "[Solidity]"
+}
+}

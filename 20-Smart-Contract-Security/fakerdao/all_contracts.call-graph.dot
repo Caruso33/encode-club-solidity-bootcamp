@@ -1,0 +1,156 @@
+strict digraph {
+subgraph cluster_1568_Migrations {
+label = "Migrations"
+"1568_setCompleted" [label="setCompleted"]
+"1568_constructor" [label="constructor"]
+"1568_setCompleted" -> "1568_restricted"
+}subgraph cluster_1477_Faker {
+label = "Faker"
+"1477_getCurrentPhase" [label="getCurrentPhase"]
+"1477_constructor" [label="constructor"]
+"1477_getCurrentPeriod" [label="getCurrentPeriod"]
+"1477_isShift" [label="isShift"]
+"1477_hasWithdrawnEarnings" [label="hasWithdrawnEarnings"]
+"1477_withdrawEarnings" [label="withdrawEarnings"]
+"1477_voteBySlate" [label="voteBySlate"]
+"1477_voteByAddresses" [label="voteByAddresses"]
+"1477_submitBid" [label="submitBid"]
+"1477_withdrawPhaseEarnings" [label="withdrawPhaseEarnings"]
+"1477_isAuction" [label="isAuction"]
+"1477_deposit" [label="deposit"]
+"1477_recordEarningsWithdrawal" [label="recordEarningsWithdrawal"]
+"1477_withdrawMaker" [label="withdrawMaker"]
+"1477_withdrawPhaseEarnings" -> "1477_recordEarningsWithdrawal"
+"1477_withdrawPhaseEarnings" -> "1477_isAuction"
+"1477_withdrawMaker" -> "1477_onlyShift"
+"1477_submitBid" -> "1477_onlyAuction"
+"1477_submitBid" -> "1477_getCurrentPhase"
+"1477_voteByAddresses" -> "1477_getCurrentPhase"
+"1477_deposit" -> "1477_getCurrentPhase"
+"1477_deposit" -> "1477_onlyShift"
+"1477_getCurrentPhase" -> "1477_getCurrentPeriod"
+"1477_withdrawPhaseEarnings" -> "1477_hasWithdrawnEarnings"
+"1477_isAuction" -> "1477_getCurrentPeriod"
+"1477_withdrawPhaseEarnings" -> "1477_isShift"
+"1477_voteBySlate" -> "1477_onlyWinner"
+"1477_voteByAddresses" -> "1477_onlyWinner"
+"1477_withdrawPhaseEarnings" -> "1477_getCurrentPhase"
+"1477_voteBySlate" -> "1477_getCurrentPhase"
+"1477_withdrawEarnings" -> "1477_withdrawPhaseEarnings"
+"1477_withdrawMaker" -> "1477_getCurrentPhase"
+"1477_isShift" -> "1477_getCurrentPeriod"
+}subgraph cluster_628_ERC20 {
+label = "ERC20"
+"628_approve" [label="approve"]
+"628_totalSupply" [label="totalSupply"]
+"628_allowance" [label="allowance"]
+"628_increaseAllowance" [label="increaseAllowance"]
+"628_decreaseAllowance" [label="decreaseAllowance"]
+"628__approve" [label="_approve"]
+"628__burnFrom" [label="_burnFrom"]
+"628__burn" [label="_burn"]
+"628_transfer" [label="transfer"]
+"628__mint" [label="_mint"]
+"628_balanceOf" [label="balanceOf"]
+"628__transfer" [label="_transfer"]
+"628_transferFrom" [label="transferFrom"]
+"628__burnFrom" -> "628__approve"
+"628_approve" -> "628__approve"
+"628__burnFrom" -> "628__msgSender"
+"628__burnFrom" -> "628__burn"
+"628_decreaseAllowance" -> "628__approve"
+"628_transferFrom" -> "628__approve"
+"628_decreaseAllowance" -> "628__msgSender"
+"628_transferFrom" -> "628__transfer"
+"628_transferFrom" -> "628__msgSender"
+"628_transfer" -> "628__transfer"
+"628_transfer" -> "628__msgSender"
+"628_increaseAllowance" -> "628__approve"
+"628_increaseAllowance" -> "628__msgSender"
+"628_approve" -> "628__msgSender"
+}subgraph cluster_216_SafeMath {
+label = "SafeMath"
+"216_add" [label="add"]
+"216_sub" [label="sub"]
+"216_mul" [label="mul"]
+"216_div" [label="div"]
+"216_mod" [label="mod"]
+"216_div" -> "216_div"
+"216_mod" -> "216_mod"
+"216_sub" -> "216_sub"
+}subgraph cluster_697_IERC20 {
+label = "IERC20"
+"697_transfer" [label="transfer"]
+"697_balanceOf" [label="balanceOf"]
+"697_transferFrom" [label="transferFrom"]
+"697_allowance" [label="allowance"]
+"697_approve" [label="approve"]
+"697_totalSupply" [label="totalSupply"]
+}subgraph cluster_1531_IChief {
+label = "IChief"
+"1531_IOU" [label="IOU"]
+"1531_GOV" [label="GOV"]
+"1531_free" [label="free"]
+"1531_vote" [label="vote"]
+"1531_lock" [label="lock"]
+"1531_lift" [label="lift"]
+"1531_approvals" [label="approvals"]
+"1531_etch" [label="etch"]
+}subgraph cluster_29_Context {
+label = "Context"
+"29__msgSender" [label="_msgSender"]
+"29__msgData" [label="_msgData"]
+"29_constructor" [label="constructor"]
+}subgraph cluster_766_Initializable {
+label = "Initializable"
+"766_isConstructor" [label="isConstructor"]
+}subgraph cluster_1599_TestToken {
+label = "TestToken"
+"1599_mint" [label="mint"]
+"1599_constructor" [label="constructor"]
+"1599_mint" -> "1599__mint"
+}subgraph cluster_solidity {
+label = "[Solidity]"
+"require(bool,string)" 
+"216_mul" -> "require(bool,string)"
+"628__approve" -> "require(bool,string)"
+"1477_withdrawPhaseEarnings" -> "require(bool,string)"
+"216_div" -> "require(bool,string)"
+"628__transfer" -> "require(bool,string)"
+"628__mint" -> "require(bool,string)"
+"216_sub" -> "require(bool,string)"
+"1477_constructor" -> "require(bool,string)"
+"1477_submitBid" -> "require(bool,string)"
+"1477_withdrawMaker" -> "require(bool,string)"
+"628__burn" -> "require(bool,string)"
+"216_add" -> "require(bool,string)"
+"216_mod" -> "require(bool,string)"
+"1477_deposit" -> "require(bool,string)"
+}"628__burnFrom" -> "216_sub"
+"1477_constructor" -> "1531_IOU"
+"1477_deposit" -> "216_add"
+"628_decreaseAllowance" -> "216_sub"
+"1477_getCurrentPhase" -> "216_div"
+"628_increaseAllowance" -> "216_add"
+"1477_deposit" -> "1531_lock"
+"1477_voteBySlate" -> "1531_vote"
+"1477_withdrawPhaseEarnings" -> "216_div"
+"628__transfer" -> "216_add"
+"1477_constructor" -> "697_approve"
+"628__mint" -> "216_add"
+"1477_constructor" -> "1531_vote"
+"1477_voteByAddresses" -> "1531_vote"
+"1477_getCurrentPeriod" -> "216_sub"
+"1477_withdrawMaker" -> "1531_free"
+"628__burn" -> "216_sub"
+"1477_withdrawPhaseEarnings" -> "697_transfer"
+"1477_deposit" -> "697_transferFrom"
+"628_transferFrom" -> "216_sub"
+"1477_constructor" -> "1531_GOV"
+"1477_getCurrentPeriod" -> "216_div"
+"1477_submitBid" -> "697_transferFrom"
+"628__transfer" -> "216_sub"
+"1477_withdrawMaker" -> "697_transfer"
+"1477_submitBid" -> "697_transfer"
+"1477_withdrawPhaseEarnings" -> "216_mul"
+}

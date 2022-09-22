@@ -1,0 +1,40 @@
+<div class="px-4 py-5 my-5 text-center">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-1">
+        <a href="#" class="btn btn-primary mx-2">Home</a>
+      </div>
+      <div class="col-11 h1 mb-5">
+        <p>NFT Marketplace</p>
+      </div>
+    </div>
+    <div class="row card-group">
+      <div class="col-4" *ngFor="let nft of nftCollection">
+        <div class="card h-100 mb-4" aria-current="true">
+          <img
+            *ngIf="nft.image === 'loading'"
+            class="card-img-top"
+            src="assets/images/cat.jpeg"
+            alt="loader"
+          />
+          <img
+            *ngIf="nft.image !== 'loading'"
+            class="card-img-top"
+            src="{{ nft.image }}"
+            alt="{{ nft.name }}"
+            (click)="openFileInIPFS(nft.image)"
+          />
+          <div class="card-body">
+            <h6 class="card-title">
+              <strong>{{ nft.name }}</strong>
+            </h6>
+            <p class="card-text">
+              Buy this NFT to be the coolest one in CryptoTown.
+            </p>
+            <a href="#" class="btn btn-primary mx-2">Buy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
